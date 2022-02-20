@@ -5,6 +5,4 @@ RUN ["apt", "install", "-y", "netcat"]
 
 EXPOSE 54321
 
-
-ENTRYPOINT [ "nc" ] 
-# ["nc", "-kluvw", "0"]
+CMD ["nc", "-kluvw", "0",  "54321"]
